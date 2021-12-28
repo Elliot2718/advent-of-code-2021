@@ -14,8 +14,12 @@ models:
   advent:
     day_1:
       +schema: "1"
+    day_2:
+      +schema: "2"
 
 seeds:
   advent:
     day_1:
       +schema: "1"
+    day_2:
+      +schema: "2"
