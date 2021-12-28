@@ -11,12 +11,11 @@ clean-targets:         # directories to be removed by `dbt clean`
   - "dbt_packages"
 
 models:
-  +materialized: table
   advent:
-    puzzle_1:
+    day_1:
       +schema: "1"
 
 seeds:
   advent:
-    puzzle_1:
+    day_1:
       +schema: "1"

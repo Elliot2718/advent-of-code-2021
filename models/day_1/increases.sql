@@ -4,7 +4,9 @@ prior_measurements as (
     select
         measurement_id,
         depth_measurement,
-        lag(depth_measurement, 1, null) over (order by measurement_id) as prior_depth_measurement
+        lag(depth_measurement, 1, null) over (
+            order by measurement_id
+        ) as prior_depth_measurement
     from measurements
     order by measurement_id
 ),
