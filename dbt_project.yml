@@ -1,11 +1,22 @@
-name: 'advent-of-code-sql'
+name: advent
 version: '1.0.0'
 config-version: 2
-profile: 'advent'
+profile: advent
 model-paths: ["models"]
-seed-paths: ["seeds"]
+seed-paths: ["models"]
 
 target-path: "target"  # directory which will store compiled SQL files
 clean-targets:         # directories to be removed by `dbt clean`
   - "target"
   - "dbt_packages"
+
+models:
+  +materialized: table
+  advent:
+    puzzle_1:
+      +schema: "1"
+
+seeds:
+  advent:
+    puzzle_1:
+      +schema: "1"

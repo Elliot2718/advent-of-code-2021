@@ -4,8 +4,8 @@ advent:
     advent:
       type: bigquery
       method: oauth
-      project: advent-of-code-2021
-      dataset: puzzles
+      project: advent-of-code-2021-336517
+      dataset: puzzle
       threads: 1
       timeout_seconds: 300
       location: US
