@@ -1,0 +1,13 @@
+advent:
+  target: advent
+  outputs:
+    advent:
+      type: bigquery
+      method: oauth
+      project: advent-of-code-2021
+      dataset: puzzles
+      threads: 1
+      timeout_seconds: 300
+      location: US
+      priority: interactive
+      retries: 1
